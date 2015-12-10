@@ -1,0 +1,22 @@
+For Fixed-point
+
+./configure --enable-debug --enable-intrinsics --enable-rtcd --enable-doc --enable-extra-programs X86_AVX_CFLAGS=-mavx --enable-fixed-point
+
+so, SSE2/SSE4.1/AVX can be enabled for fixed only.
+
+
+About Debug,
+
+gdb /home/luq/Dev2/Multimedia/luq_opus/.libs/lt-opus_demo
+
+set args -e voip 48000 2 48000 examples/music_orig.wav test.opus
+
+
+b /home/luq/Dev2/Multimedia/luq_opus/celt/x86/pitch_sse4_1.c:54
+
+
+
+
+For Float-point
+./configure --enable-debug --enable-rtcd --enable-doc --enable-extra-programs 
+
